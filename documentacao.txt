@@ -1,0 +1,32 @@
+Teste Mobile - utilize um app a sua escolha
+
+3.1 - Crie um script simples que realize a consulta de um produto no site ou outra transação significativa até chegar a etapa do carrinho de compras ou outra que conclua o fluxo. Valide o nome e o preço do produto em cada uma das telas para garantir que se mantenha o mesmo, ou outras informações representativas.
+https://jam.dev/c/42ba1ab8-8213-41e2-beb0-6b54ba7da43e
+
+3.2 - Crie uma versão do script organizado com um arquivo de features e outro de passos. Realize o teste com 2 produtos cujos dados devem estar preenchidos na feature.
+
+3.3 - Organize esse mesmo script em Page Objects. As etapas 3.2 e 3.3 podem ser realizadas juntas, se preferir.
+
+
+//Passo a passos
+- Android Studio > Virtual Device Manager > Rodar o emulador do aparelho
+- Appium Inspector > Start Session
+- Rodar appium no Cursor
+
+- Baixar app no mobile: https://www.apkmirror.com/ 
+
+apkPackage: com.saucelabs.mydemoapp.android
+apkActivity: com.saucelabs.mydemoapp.android.SplashActivity (Dentro das infos dos App, do MyDemoApp → Activities → A função de entrada)
+
+
+{
+  "platformName": "Android",
+  "appium:platformVersion": "13.0",
+  "appium:deviceName": "emulator5554",
+  "appium:deviceOrientation": "portrait",
+  "appium:appPackage": "com.saucelabs.mydemoapp.android",
+  "appium:appActivity": "com.saucelabs.mydemoapp.android.view.activities.SplashActivity",
+  "appium:automationName": "UiAutomator2",
+  "browserName": "",
+  "appium:ensureWebviewsHavePages": "true"
+}
